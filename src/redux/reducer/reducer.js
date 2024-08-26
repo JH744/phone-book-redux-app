@@ -3,18 +3,16 @@ let initialState = {
 };
 
 function reducer(state = initialState, action) {
-  console.log("sss");
-  //   const { type, payload } = action;
-  console.log(state.payload.name);
-  switch (state.type) {
+  const { type, payload } = action;
+  switch (type) {
     case "ADD_CONTACT":
       return {
         ...state,
         contactList: [
           ...state.contactList,
           {
-            name: state.payload.name,
-            phoneNumber: state.payload.phoneNumber,
+            name: payload.name,
+            phoneNumber: payload.phoneNumber,
           },
         ],
       };
