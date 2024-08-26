@@ -38,7 +38,7 @@ const ContactForm = () => {
           <Form.Label>전화번호</Form.Label>
           <Form.Control type="number" placeholder="전화번호를 입력해주세요." />
         </Form.Group>
-        <Button variant="primary" type="submit">
+        <Button variant="warning" type="submit">
           연락처 추가
         </Button>
       </Form>
